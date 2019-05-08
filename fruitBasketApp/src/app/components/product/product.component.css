@@ -1,0 +1,5 @@
+/* To style columns in products table*/
+.mat-table-th,
+.mat-table-td {
+  text-align: center;
+}

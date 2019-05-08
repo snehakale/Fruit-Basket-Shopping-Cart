@@ -1,0 +1,51 @@
+<div class="container text-center">
+  <div class="row">
+    <h5>
+      Welcome to Fruit Baskets Store!!
+      Browse the following products and click on add to cart to buy.
+      Enjoy Shopping!!
+    </h5>
+  </div>
+  <br />
+  <div class="row">
+    <h2>Products</h2>
+  </div>
+  <br />
+  <div class="row">
+    <h5> Search : </h5>&nbsp;
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event.target.value)" class="form-control">
+    </mat-form-field>
+  </div>
+  <br/>
+  <div class="row">
+    <table mat-table [dataSource]="dataSource" class="table table-bordered table-hover">
+      <!-- Name Column -->
+      <ng-container matColumnDef="Name">
+        <th *matHeaderCellDef class="mat-th-style">Name</th>
+        <td *matCellDef="let product" class="mat-table-td"> <a [routerLink]="['/info', {id: product.id}]">{{product.name}}</a> </td>
+      </ng-container>
+
+      <!-- Price Column -->
+      <ng-container matColumnDef="Price">
+        <th *matHeaderCellDef class="mat-th-style">Price in U.S.Dollars</th>
+        <td *matCellDef="let product" class="mat-table-td"> {{product.price}} </td>
+      </ng-container>
+
+      <!-- Photo Column -->
+      <ng-container matColumnDef="Photo">
+        <th *matHeaderCellDef class="mat-th-style">Photo</th>
+        <td *matCellDef="let product" class="mat-table-td"> <img src="assets/{{product.photo}}" width="80" height="60" /> </td>
+      </ng-container>
+
+      <!-- Add to Cart Column -->
+      <ng-container matColumnDef="Id">
+        <th *matHeaderCellDef class="mat-th-style">Add to cart</th>
+        <td *matCellDef="let product" class="mat-table-td"> <a [routerLink]="['/cart', {id: product.id}]">Add to Cart</a> </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+</div>

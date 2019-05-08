@@ -1,0 +1,27 @@
+<div class="container text-center">
+  <div class="row">
+    <h2>Product Information</h2>
+  </div>
+  <div class="row">
+    <table class="table table-bordered table-hover">
+      <tr>
+        <th>Name</th>
+        <td>{{product.name}}</td>
+      </tr>
+      <tr>
+        <th>Photo</th>
+        <td><img src="assets/{{product.photo}}" width="80" height="60" /> </td>
+      </tr>
+      <tr>
+        <th>Info</th>
+        <td>{{product.info}}</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <a [routerLink]="['/products']">Back to Products</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
