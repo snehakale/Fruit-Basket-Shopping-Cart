@@ -1,27 +1,30 @@
-# FruitBasketApp
+## Project Title
+### Fruit-Basket-Shopping-Cart
+This project contains a shopping cart app, built using Angular JS framework. It also uses BootStrap framework for styling and Angular Material framework for filtering table data. The view shows a Fruits Basket Store and provides functionalities to perform CRUD operations on given products.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+### Pre-Requisites and Installation
+1. Download / Clone the given project folder.
+2. Install [Node.JS and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+3. To start working with Angular do the following steps:
+    (1) Install the Angular CLI globally using following command.
+    **npm install -g @angular/cli**
+    (2) Go to the workspace folder (fruitBasketApp).
+    **cd ..your_path..**
+    (3) Run the following command for Angular Material framework.
+    **npm install --save @angular/material @angular/cdk @angular/animations**
+    (4) Run the project using folloowing command.
+    **npm start**
+    This will automatically run command **ng serve**
+    (5) To check out the output, open the following link in the browser.
+    **http://localhost/4200**
 
-## Development server
+### References 
+1. [Node and NPM installation](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+2. [Angular-Getting Started](https://angular.io/guide/quickstart)
+3. [Angular Material Framework - Getting Started](https://material.angular.io/guide/getting-started)
+4. [Angular Material Tables](https://material.angular.io/components/table/overview)
+5. [Bootstrap - Getting Started](https://getbootstrap.com/)
+6. [Bootstrap Framework Tutorial](https://www.w3schools.com/bootstrap/bootstrap_get_started.asp)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Author
+Sneha Kale
